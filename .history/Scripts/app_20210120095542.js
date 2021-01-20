@@ -40,8 +40,9 @@
         newParagraph.className = "fs-6";
 
         //////another way to add an element ///////
-        //let paragraphThree =`<p class="fs-7 fw-bold">And this is the Third Paragraph</p>`;
-        //mainContent.innerHTML = paragraphThree;
+        let paragraphThree =`<p class="fs-7 fw-bold">And this is the Third Paragraph</p>`;
+
+        mainContent.innerHTML = paragraphThree;
 
     }
 
