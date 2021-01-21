@@ -44,23 +44,12 @@
         //mainContent.innerHTML = paragraphThree;
 
         let paragraphDiv = document.createElement("div");
-        let paragraphThree = `<p id="paragraphThree" class="fs-7 fw-bold">And this is the third paragraph</p>`
+        let paragraphThree = `<p id="paragraphThree" class="fs-7 fw=bold">An this is the third paragraph</p>`
         paragraphDiv.innerHTML = paragraphThree;
 
         //insertion before a node
         //newParagraph.before(paragraphDiv);
         newParagraph.after(paragraphDiv);
-
-        //deletions
-        //paragraphOneElement.remove();
-        mainContent.removeChild(paragraphOneElement);
-
-        //Update / modification of an element
-        //mainContent.firstElementChild.textContent = "Welcome Home!";
-
-        mainContent.innerHTML =
-        `<h1 id="firstHeading">Welcome to WEBD6201 - Lab 1</h1>
-        <p id="paragraphOne" class="fs-3 fw-bold">This is my first paragraph</p>`
 
     }
 
