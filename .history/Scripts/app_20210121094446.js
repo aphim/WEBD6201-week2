@@ -79,29 +79,13 @@ function displayContact()
     messageArea.hidden = true;
     //form validation
     let fullName = document.getElementById("fullName");
-        fullName.addEventListener("blur", function() 
-        {
-            if(fullName.value.length < 2)
-            {
-                fullName.focus();
-                fullName.select();
-                messageArea.hidden = false;
-                messageArea.textContent = "Please enter an appropriate Name";
-            }
-            else
-            {
-                messageArea.removeAttribute("class");
-                messageArea.hidden = true;
-            }
-        });
-
-    let sendButton = document.getElementById("sendButton");
-    sendButton.addEventListener("click", function(event)
+    fullName.addEventListener("blur", function()
     {
-        event.preventDefault();
-        console.log(fullName.value);
-        console.log(contactNumber.value);
-        console.log(emailAddress.value);
+        if(fullName.value.length < 2)
+        {
+            fullName.focus();
+            fullName.select();
+        } 
     });
 }
 
